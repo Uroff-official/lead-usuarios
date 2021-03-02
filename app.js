@@ -13,9 +13,9 @@ formApp.config(function ($stateProvider, $urlRouterProvider) {
 
     // Nested states
     // Url will be nested (/form/espacios)
-        .state('form.espacios', {
-            url: '/espacios',
-            templateUrl: 'form-espacios.html'
+        .state('form.contacto', {
+            url: '/contacto',
+            templateUrl: 'form-contacto.html'
         })
 
     // url will be (/form/interests)
