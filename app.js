@@ -161,7 +161,7 @@ formApp.controller('formController', function ($scope, $http, $state) {
 
 formApp.controller('ubicacionController', function ($scope, $http, $state) {
 
-  $scope.$watch('$viewContentLoaded', function(){
+
 
   	var iRegion = 0;
   	var htmlRegion = '<option value="sin-region">Seleccione región</option><option value="sin-region">--</option>';
@@ -204,6 +204,6 @@ formApp.controller('ubicacionController', function ($scope, $http, $state) {
   		}
   	});
 
-  });
+
 
 });
