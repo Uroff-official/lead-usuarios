@@ -107,7 +107,7 @@ $(document).ready(function () {
 
 	$('#regiones').change(function () {
 		var iRegiones = 0;
-		var valorRegion = jQuery(this).val();
+		var valorRegion = $(this).val();
 		var htmlComuna = '<option value="sin-comuna">Seleccione comuna</option><option value="sin-comuna">--</option>';
 		$.each(RegionesYcomunas.regiones, function () {
 			if (RegionesYcomunas.regiones[iRegiones].NombreRegion == valorRegion) {
@@ -122,14 +122,14 @@ $(document).ready(function () {
 		$('#comunas').html(htmlComuna);
 	});
 	$('#comunas').change(function () {
-		if (jQuery(this).val() == 'sin-region') {
+		if ($(this).val() == 'sin-region') {
 			alert('selecciones Región');
-		} else if (jQuery(this).val() == 'sin-comuna') {
+		} else if ($(this).val() == 'sin-comuna') {
 			alert('selecciones Comuna');
 		}
 	});
 	$('#regiones').change(function () {
-		if (jQuery(this).val() == 'sin-region') {
+		if ($(this).val() == 'sin-region') {
 			alert('selecciones Región');
 		}
 	});
