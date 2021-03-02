@@ -41,7 +41,7 @@ formApp.config(function ($stateProvider, $urlRouterProvider) {
 
     // Catch all route
     // Send users to form page
-    $urlRouterProvider.otherwise('/form/espacios');
+    $urlRouterProvider.otherwise('/form/contacto');
 
 });
 
