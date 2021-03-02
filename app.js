@@ -164,7 +164,7 @@ formApp.controller('ubicacionController', function ($scope, $http, $state) {
 
 
   	var iRegion = 0;
-  	var htmlRegion = '<option value="sin-region">Seleccione región</option><option value="sin-region">--</option>';
+  	var htmlRegion = '';
   	var htmlComunas = '<option value="sin-region">Seleccione comuna</option><option value="sin-region">--</option>';
 
   	jQuery.each(RegionesYcomunas.regiones, function () {
