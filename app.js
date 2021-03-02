@@ -18,6 +18,11 @@ formApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'form-contacto.html'
         })
 
+        .state('form.espacio', {
+            url: '/espacio',
+            templateUrl: 'form-espacio.html'
+        })
+
     // url will be (/form/interests)
         .state('form.interests', {
             url: '/interests',
