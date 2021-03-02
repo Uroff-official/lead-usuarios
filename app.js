@@ -26,7 +26,7 @@ formApp.config(function ($stateProvider, $urlRouterProvider) {
     // url will be (/form/interests)
         .state('form.interests', {
             url: '/interests',
-            templateUrl: 'form-interests.html'
+            templateUrl: 'form-ubicacion.html'
         })
 
         .state('form.payment', {
