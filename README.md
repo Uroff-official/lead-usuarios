@@ -1,4 +1,4 @@
-# AngularJS Multi-Step Form Using UI Router
+# AngularJS Multi-Step Formulario
 _by Javier Pérez,
 
 uroff.net
