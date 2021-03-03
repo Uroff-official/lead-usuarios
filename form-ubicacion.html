@@ -27,11 +27,12 @@
 <div class="form-group row">
 <div class="action-checkbox col-lg-2 col-md-2"></div>
 <div class="action-checkbox col-lg-8 col-md-8">
+
 <div class="form-group row" style="text-align:center;">
-        <a ng-disabled="(usuarios.region && usuarios.comuna) ?  false : true" ui-sref="form.greetings" class="btn btn-block btn-info botoncito">
-            Siguiente <!--<span class="glyphicon glyphicon-circle-arrow-right"></span>-->
-        </a>
+    <button disabled ng-disabled="(usuarios.region && usuarios.comuna) ?  false : true" type="submit" class="btn btn-block btn-info botoncito">Enviar!</button>
 </div>
+
+
 </div>
 <div class="action-checkbox col-lg-2 col-md-2"></div>
 </div>
