@@ -61,9 +61,21 @@ formApp.controller('formController', function ($scope, $http, $state) {
     $scope.processForm = function () {
 
 
+
+
+
+        if($scope.espacios.nombre){
+          url = url + "&entry.2102227671="+$scope.usuarios.nombre;
+        }
+        if($scope.espacios.correo){
+          url = url + "&entry.1546509052="+$scope.usuarios.correo;
+        }
+
+
+
         if($scope.espacios.espacio1){
           //alert("si");
-          url = url + "entry.1507831082=Hot desk (Puesto de trabajo compuesto por una silla y un espacio personal en un escritorio, puede ser en un mesón compartido o individual en espacios comunes de la propiedad)";
+          url = url + "&entry.1507831082=Hot desk (Puesto de trabajo compuesto por una silla y un espacio personal en un escritorio, puede ser en un mesón compartido o individual en espacios comunes de la propiedad)";
         }
         if($scope.espacios.espacio2){
           //alert("si");
@@ -81,46 +93,17 @@ formApp.controller('formController', function ($scope, $http, $state) {
           //alert("si");
           url = url+"&entry.1507831082=Room office (Oficina dentro de un hotel)";
         }
-        
-        if($scope.espacios.equipamiento1){
-            url = url+"&entry.335737359=wifi";
-        }
-        if($scope.espacios.equipamiento2){
-            url = url+"&entry.335737359=aireacondicionado";
-        }
-        if($scope.espacios.equipamiento3){
-            url = url+"&entry.335737359=cocina";
-        }
-        if($scope.espacios.equipamiento4){
-            url = url+"&entry.335737359=terraza";
-        }
-        if($scope.espacios.equipamiento5){
-            url = url+"&entry.335737359=estacionamiento";
-        }
-        if($scope.espacios.equipamiento6){
-            url = url+"&entry.335737359=areascomunes";
-        }
-        if($scope.espacios.equipamiento7){
-            url = url+"&entry.335737359=areasdedescanso";
-        }
-        if($scope.espacios.equipamiento8){
-            url = url+"&entry.335737359=impresora";
-        }
-        if($scope.espacios.equipamiento9){
-            url = url+"&entry.335737359=cafetera";
-        }
-        if($scope.espacios.equipamiento10){
-            url = url+"&entry.335737359=dispensadordeagua";
-        }
 
 
 
-        if($scope.espacios.nombre){
-          url = url + "&entry.752939772="+$scope.espacios.nombre;
+
+        if($scope.usuarios.region){
+            url = url+"&entry.243451619="+$scope.usuarios.region";
         }
-        if($scope.espacios.correo){
-          url = url + "&entry.1486648297="+$scope.espacios.correo;
+          if($scope.usuarios.comuna){
+            url = url+"&entry.527569424="+ $scope.usuarios.comuna";
         }
+
         //alert(url);
         $state.go("form.greetings");
         alert('Información Enviada!');
