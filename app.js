@@ -55,38 +55,33 @@ formApp.controller('formController', function ($scope, $http, $state) {
 
     // Store all form data in this object
     $scope.espacios = {};
-    $scope.espacios.anfitrion = "si";
-    var url = "https://docs.google.com/forms/d/e/1FAIpQLSfMau3csnnfCxuzJCmzkKL6MT7WSPqxbkXCNhRj8pvcvf2WTg/formResponse?";
+    //$scope.espacios.anfitrion = "si";
+    var url = "https://docs.google.com/forms/d/e/1FAIpQLScvkELI7SCYp-arrwJgu9Y9j_2iTGShJPrFk_eB62wZfErzqA/formResponse?";
     //Function to process the form
     $scope.processForm = function () {
 
 
         if($scope.espacios.espacio1){
           //alert("si");
-          url = url + "entry.2034663610=hotdesk";
+          url = url + "entry.1507831082=Hot desk (Puesto de trabajo compuesto por una silla y un espacio personal en un escritorio, puede ser en un mesón compartido o individual en espacios comunes de la propiedad)";
         }
         if($scope.espacios.espacio2){
           //alert("si");
-          url = url + "&entry.2034663610=saladereunion";
+          url = url + "&entry.1507831082=Escritorio dedicado";
         }
         if($scope.espacios.espacio3){
           //alert("si");
-          url = url + "&entry.2034663610=oficinaprivada";
+          url = url + "&entry.1507831082=Sala de reunión";
         }
         if($scope.espacios.espacio4){
           //alert("si");
-          url = url+"&entry.2034663610=roomoffice";
+          url = url+"&entry.1507831082=Oficina privada";
         }
-        if($scope.espacios.anfitrion){
-          if($scope.espacios.anfitrion == 'si'){
-            //alert("afitrion si")
-            url = url + "&entry.633493258=Si";
-          }else{
-            url = url + "&entry.633493258=No";
-            //alert("anfitrion no");
-          }
-
+        if($scope.espacios.espacio5){
+          //alert("si");
+          url = url+"&entry.1507831082=Room office (Oficina dentro de un hotel)";
         }
+        
         if($scope.espacios.equipamiento1){
             url = url+"&entry.335737359=wifi";
         }
