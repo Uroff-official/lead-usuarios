@@ -98,9 +98,11 @@ formApp.controller('formController', function ($scope, $http, $state) {
 
 
         if($scope.usuarios.region){
+            alert($scope.usuarios.region);
             url = url+"&entry.243451619="+$scope.usuarios.region;
         }
         if($scope.usuarios.comuna){
+            alert($scope.usuarios.comuna);
             url = url+"&entry.527569424="+$scope.usuarios.comuna;
         }
 
