@@ -55,6 +55,7 @@ formApp.controller('formController', function ($scope, $http, $state) {
 
     // Store all form data in this object
     $scope.espacios = {};
+    $scope.usuarios = {};
     //$scope.espacios.anfitrion = "si";
     var url = "https://docs.google.com/forms/d/e/1FAIpQLScvkELI7SCYp-arrwJgu9Y9j_2iTGShJPrFk_eB62wZfErzqA/formResponse?";
     //Function to process the form
