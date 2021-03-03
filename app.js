@@ -78,10 +78,6 @@ formApp.controller('formController', function ($scope, $http, $state) {
           //alert("si");
           url = url + "&entry.1507831082=Hot desk (Puesto de trabajo compuesto por una silla y un espacio personal en un escritorio, puede ser en un mesón compartido o individual en espacios comunes de la propiedad)";
         }
-        if($scope.espacios.espacio2){
-          //alert("si");
-          url = url + "&entry.1507831082=Escritorio dedicado";
-        }
         if($scope.espacios.espacio3){
           //alert("si");
           url = url + "&entry.1507831082=Sala de reunión";
