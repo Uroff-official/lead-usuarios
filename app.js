@@ -100,7 +100,7 @@ formApp.controller('formController', function ($scope, $http, $state) {
         if($scope.usuarios.region){
             url = url+"&entry.243451619="+$scope.usuarios.region;
         }
-          if($scope.usuarios.comuna){
+        if($scope.usuarios.comuna){
             url = url+"&entry.527569424="+$scope.usuarios.comuna;
         }
 
@@ -146,7 +146,7 @@ formApp.controller('ubicacionController', function ($scope, $http, $state) {
   	var htmlComunas = '<option value="sin-region">Seleccione comuna</option><option value="sin-region">--</option>';
 
   	jQuery.each(RegionesYcomunas.regiones, function () {
-  		htmlRegion = htmlRegion + '<option value="' + RegionesYcomunas.regiones[iRegion].NombreRegion + '">' + RegionesYcomunas.regiones[iRegion].NombreRegion + '</option>';
+  		htmlRegion = htmlRegion + '<option ng-model="usuarios.region" value="' + RegionesYcomunas.regiones[iRegion].NombreRegion + '">' + RegionesYcomunas.regiones[iRegion].NombreRegion + '</option>';
   		iRegion++;
   	});
 
@@ -156,12 +156,12 @@ formApp.controller('ubicacionController', function ($scope, $http, $state) {
   	jQuery('#regiones').change(function () {
   		var iRegiones = 0;
   		var valorRegion = jQuery(this).val();
-  		var htmlComuna = '<option value="sin-comuna">Seleccione comuna</option><option value="sin-comuna">--</option>';
+  		var htmlComuna = '<option ng-model="usuarios.comuna" value="sin-comuna">Seleccione comuna</option><option value="sin-comuna">--</option>';
   		jQuery.each(RegionesYcomunas.regiones, function () {
   			if (RegionesYcomunas.regiones[iRegiones].NombreRegion == valorRegion) {
   				var iComunas = 0;
   				jQuery.each(RegionesYcomunas.regiones[iRegiones].comunas, function () {
-  					htmlComuna = htmlComuna + '<option value="' + RegionesYcomunas.regiones[iRegiones].comunas[iComunas] + '">' + RegionesYcomunas.regiones[iRegiones].comunas[iComunas] + '</option>';
+  					htmlComuna = htmlComuna + '<option ng-model="usuarios.comuna" value="' + RegionesYcomunas.regiones[iRegiones].comunas[iComunas] + '">' + RegionesYcomunas.regiones[iRegiones].comunas[iComunas] + '</option>';
   					iComunas++;
   				});
   			}
