@@ -65,10 +65,10 @@ formApp.controller('formController', function ($scope, $http, $state) {
 
 
 
-        if($scope.espacios.nombre){
+        if($scope.usuarios.nombre){
           url = url + "&entry.2102227671="+$scope.usuarios.nombre;
         }
-        if($scope.espacios.correo){
+        if($scope.usuarios.correo){
           url = url + "&entry.1546509052="+$scope.usuarios.correo;
         }
 
@@ -103,7 +103,7 @@ formApp.controller('formController', function ($scope, $http, $state) {
             url = url+"&entry.243451619="+$scope.usuarios.region;
         }
         if($scope.usuarios.comuna){
-            
+
             url = url+"&entry.527569424="+$scope.usuarios.comuna;
         }
 
