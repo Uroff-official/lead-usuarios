@@ -71,6 +71,9 @@ formApp.controller('formController', function ($scope, $http, $state) {
         if($scope.usuarios.correo){
           url = url + "&entry.1546509052="+$scope.usuarios.correo;
         }
+        if($scope.usuarios.telefono){
+          url = url + "&entry.693580810="+$scope.usuarios.telefono;
+        }
 
 
 
